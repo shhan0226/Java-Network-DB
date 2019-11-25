@@ -1,4 +1,4 @@
-# Algorithms-Java
+# Java
 
 ## Introduction
 Java를 이용한 다양한 알고리즘 구현
