@@ -1,7 +1,7 @@
-# Network-Java
+# Java-Network
 
 ## Introduction
-Java를 이용한 다양한 알고리즘 및 기능을 구현
+Java를 이용한 네트워크의 다양한 기능을 구현
 
 ## Algorithms
 
