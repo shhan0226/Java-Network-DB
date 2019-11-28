@@ -6,7 +6,6 @@ import java.util.*;
 public class ChatHandlerServer {
 
 	public static void main(String args[]) throws Exception {
-		
 		if (args.length != 1) {
 			throw new IllegalArgumentException("Syntax : ChatServer [포트번호]");
 		}
