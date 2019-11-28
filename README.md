@@ -1,7 +1,7 @@
 # Java-Network-DB
 
 ## Introduction
-Java를 이용한 네트워크의 다양한 기능을 구현
+Java를 이용한 네트워크의 다양한 기능을 구현 예제 
 
 ## Contents
 
