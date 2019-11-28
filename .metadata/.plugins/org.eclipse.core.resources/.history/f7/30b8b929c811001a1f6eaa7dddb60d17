@@ -1,0 +1,39 @@
+package client;
+
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.net.InetAddress;
+import java.net.Socket;
+
+public class ClientEx4 {
+	
+	public static void main(String[] args) {
+		/*Buffer_connection*******************************************/
+		InetAddress remote_addr=null;
+		Socket soc = null;
+		
+		try{
+			//remote_addr = InetAddress.getLocalHost();
+			//soc = new Socket(remote_addr, 8000);
+			soc = new Socket("210.94.185.166", 8000);
+			System.out.println("compelete connect!");
+			
+			//서버로 데이터 보내기
+			PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(soc.getOutputStream())));
+			out.println("We can do it!");
+			out.flush();
+			System.out.println("complet sending");
+			
+			soc.shutdownOutput();
+			soc.close();
+				
+			
+		}catch(IOException ex){
+			System.out.println("server error :"+ex.getLocalizedMessage());
+			System.exit(-1);
+	}
+
+}
+}

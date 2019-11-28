@@ -1,0 +1,38 @@
+package server;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+
+import java.net.Socket;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class ServerEx1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+				
+		/* curent Address check **********************************************ex1*/
+		
+		System.out.println("example 1");
+		InetAddress local_addr = null;
+		InetAddress remote_addr = null;
+		
+		try{
+			local_addr=InetAddress.getLocalHost();
+			remote_addr=InetAddress.getByName("ucloud-lab.dongguk.edu");		
+		}catch(UnknownHostException ex){
+			System.err.println("not Using Address");
+			System.exit(-1);
+		}
+		
+		System.out.println("local+addr = " +local_addr.getHostAddress());
+		System.out.println("remote_addr = " +remote_addr.getHostAddress());
+		
+		}
+		
+}
